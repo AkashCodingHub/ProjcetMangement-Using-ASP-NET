@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="ProjcetMangement.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+        <style type="text/css">
+        .auto-style3 {
+            width: 100%;
+            height: 46px;
+        
+        }
+            .auto-style4 {
+                width: 1376px;
+                height: 323px;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <img alt="" class="auto-style4" src="img/download%20(1).jfif" /><table class="auto-style3">
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Menu ID="Menu3" runat="server" Orientation="Horizontal">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/HomeMain.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/AboutMain.aspx" Text="About" Value="About"></asp:MenuItem>
+                                <asp:MenuItem  Text="Register" Value="Register">
+                                    <asp:MenuItem NavigateUrl="~/MainEmployee.aspx" Text="Employee" Value="Employee"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/MainProject.aspx" Text="Project" Value="Project"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/MainLog.aspx" Text="Login" Value="Login"></asp:MenuItem>
+                            </Items>
+<StaticMenuItemStyle Font-Bold="true" Font-Size="35px" HorizontalPadding="20px" ForeColor="Violet" />
+                        </asp:Menu>                            
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <p>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</p>
+            </asp:ContentPlaceHolder>
+                    </p>
+    </form>
+    </body>
+</html>
+
+<%--<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>--%>

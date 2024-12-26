@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="ProjectManagement.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 779px;
+        }
+        .auto-style2 {
+            height: 404px;
+           
+        }
+        .auto-style5 {
+            width= 100%
+            height: 240px;
+
+        }
+        .auto-style6 {
+            font-size: xx-large;
+            text-align: center;
+        }
+        .auto-style9 {
+            height: 404px;
+             width: 8%;
+        }
+        .auto-style10 {
+            width: 1330px;
+            height: 298px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style5" colspan="2">
+                    <img alt="" class="auto-style10" src="img/download%20(4).jfif" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style6" colspan="2"><strong>Admin Page</strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style9">
+                    <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#7C6F57" StaticSubMenuIndent="10px">
+                        <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#F7F6F3" />
+                        <DynamicSelectedStyle BackColor="#5D7B9D" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/ProjectAll.aspx" Text="Project"  Value="Project"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/AssignProject.aspx" Text="Assign Project" Value="All Projects"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/CompletedProject.aspx" Text="Completed Project" Value="Completed Project"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Payment.aspx" Text="Payment Done" Value="Payment Done"></asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle Font-Bold="true" Font-Size="35px" HorizontalPadding="20px" ForeColor="Violet" />
+                        <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticMenuStyle VerticalPadding="80px" />
+                        <StaticSelectedStyle BackColor="#5D7B9D" />
+                    </asp:Menu>
+                </td>
+                <td class="auto-style2">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
